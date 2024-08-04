@@ -1,0 +1,32 @@
+/* Slider.css */
+
+/* The outermost slider container */
+.slider {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to show only one image at a time */
+    display: flex;
+    align-items: center; /* Center images vertically */
+    justify-content: center; /* Center images horizontally */
+}
+
+
+.container {
+    width: 100vw; /* Each container takes up full viewport width */
+    height: 100vh; /* Each container takes up full viewport height */
+    display: flex;
+    align-items: center; /* Center image vertically within container */
+    justify-content: center; /* Center image horizontally within container */
+    flex-shrink: 0; /* Prevent shrinking of the container */
+    transition: transform 0.5s ease-in-out
+  
+
+}
+
+/* The image styling */
+.slide-image {
+    width: 100vw; /* Image covers the full width of the viewport */
+    height: 100vh; /* Image covers the full height of the viewport */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    transform: translateX(135vh);
+}

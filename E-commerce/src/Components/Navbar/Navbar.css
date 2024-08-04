@@ -1,0 +1,158 @@
+.announcement-bar {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+ 
+  
+}
+
+.announcement-bar__message {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.announcement-bar__item {
+  min-width: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0%, 20%, 100% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-100%); }
+  50%, 70% { transform: translateX(-200%); }
+  75%, 95% { transform: translateX(-300%); }
+}
+.icon-span-wrapper{
+    font-size: xx-small;
+    letter-spacing: 0.25rem;
+    padding-top: 0.65rem;
+    
+}
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+
+  @media (position: sticky) {
+    position: sticky;
+  }
+}
+
+  
+  .navbar-top-row {
+    display: flex;
+    padding-top: 1.22rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .navbar-logo {
+    
+    margin: auto;
+    letter-spacing: 0.25rem;
+    position: relative;
+    right: -10rem;
+    color: #000;
+    top: 0.2rem;
+  }
+  
+ 
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 9rem;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px; 
+    font-size: 1.55rem;
+
+    margin-right: 0.25rem;
+    color: rgb(0, 0, 0); 
+    
+    
+    
+  
+  }
+  
+  
+  .navbar-bottom-row {
+    margin-top: 19px;
+    
+  }
+  
+  .navbar-categories {
+    display: flex;
+    justify-content: center; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .navbar-categories li {
+    margin-left: 20px; 
+    font-size: 12px;
+    
+    color: #000; 
+  }
+  .dropdown:after {
+    content: " ";
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+.no-dropdown:after {
+    content: none;
+}
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.search-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
